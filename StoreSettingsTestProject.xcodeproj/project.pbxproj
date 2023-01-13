@@ -11,9 +11,9 @@
 		009B8E76297054890004FB39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8E75297054890004FB39 /* ContentView.swift */; };
 		009B8E782970548E0004FB39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B8E772970548E0004FB39 /* Assets.xcassets */; };
 		009B8E7B2970548E0004FB39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B8E7A2970548E0004FB39 /* Preview Assets.xcassets */; };
-		009B8E852970548E0004FB39 /* StoreSettingsTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8E842970548E0004FB39 /* StoreSettingsTestProjectTests.swift */; };
-		009B8E8F2970548E0004FB39 /* StoreSettingsTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8E8E2970548E0004FB39 /* StoreSettingsTestProjectUITests.swift */; };
-		009B8E912970548E0004FB39 /* StoreSettingsTestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8E902970548E0004FB39 /* StoreSettingsTestProjectUITestsLaunchTests.swift */; };
+		009B8EA0297054BE0004FB39 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8E9F297054BE0004FB39 /* Store.swift */; };
+		009B8EA2297054CA0004FB39 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8EA1297054CA0004FB39 /* SettingsView.swift */; };
+		009B8EA4297056FB0004FB39 /* StringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B8EA3297056FB0004FB39 /* StringView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,10 @@
 		009B8E772970548E0004FB39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009B8E7A2970548E0004FB39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		009B8E802970548E0004FB39 /* StoreSettingsTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreSettingsTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		009B8E842970548E0004FB39 /* StoreSettingsTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSettingsTestProjectTests.swift; sourceTree = "<group>"; };
 		009B8E8A2970548E0004FB39 /* StoreSettingsTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreSettingsTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		009B8E8E2970548E0004FB39 /* StoreSettingsTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSettingsTestProjectUITests.swift; sourceTree = "<group>"; };
-		009B8E902970548E0004FB39 /* StoreSettingsTestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSettingsTestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		009B8E9F297054BE0004FB39 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		009B8EA1297054CA0004FB39 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		009B8EA3297056FB0004FB39 /* StringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				009B8E72297054890004FB39 /* StoreSettingsTestProject */,
-				009B8E832970548E0004FB39 /* StoreSettingsTestProjectTests */,
-				009B8E8D2970548E0004FB39 /* StoreSettingsTestProjectUITests */,
 				009B8E71297054890004FB39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +92,7 @@
 		009B8E72297054890004FB39 /* StoreSettingsTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				009B8E9D297054A20004FB39 /* Settings */,
 				009B8E73297054890004FB39 /* StoreSettingsTestProjectApp.swift */,
 				009B8E75297054890004FB39 /* ContentView.swift */,
 				009B8E772970548E0004FB39 /* Assets.xcassets */,
@@ -110,21 +109,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		009B8E832970548E0004FB39 /* StoreSettingsTestProjectTests */ = {
+		009B8E9D297054A20004FB39 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				009B8E842970548E0004FB39 /* StoreSettingsTestProjectTests.swift */,
+				009B8E9F297054BE0004FB39 /* Store.swift */,
+				009B8EA1297054CA0004FB39 /* SettingsView.swift */,
+				009B8EA3297056FB0004FB39 /* StringView.swift */,
 			);
-			path = StoreSettingsTestProjectTests;
-			sourceTree = "<group>";
-		};
-		009B8E8D2970548E0004FB39 /* StoreSettingsTestProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				009B8E8E2970548E0004FB39 /* StoreSettingsTestProjectUITests.swift */,
-				009B8E902970548E0004FB39 /* StoreSettingsTestProjectUITestsLaunchTests.swift */,
-			);
-			path = StoreSettingsTestProjectUITests;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009B8EA0297054BE0004FB39 /* Store.swift in Sources */,
+				009B8EA4297056FB0004FB39 /* StringView.swift in Sources */,
+				009B8EA2297054CA0004FB39 /* SettingsView.swift in Sources */,
 				009B8E76297054890004FB39 /* ContentView.swift in Sources */,
 				009B8E74297054890004FB39 /* StoreSettingsTestProjectApp.swift in Sources */,
 			);
@@ -266,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009B8E852970548E0004FB39 /* StoreSettingsTestProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009B8E8F2970548E0004FB39 /* StoreSettingsTestProjectUITests.swift in Sources */,
-				009B8E912970548E0004FB39 /* StoreSettingsTestProjectUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekaris-GmbH.StoreSettingsTestProject";
+				PRODUCT_BUNDLE_IDENTIFIER = nicigomez.StoreSettingsTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -457,7 +449,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekaris-GmbH.StoreSettingsTestProject";
+				PRODUCT_BUNDLE_IDENTIFIER = nicigomez.StoreSettingsTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -475,7 +467,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekaris-GmbH.StoreSettingsTestProjectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = nicigomez.StoreSettingsTestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -494,7 +486,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekaris-GmbH.StoreSettingsTestProjectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = nicigomez.StoreSettingsTestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -511,7 +503,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekaris-GmbH.StoreSettingsTestProjectUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = nicigomez.StoreSettingsTestProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -528,7 +520,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekaris-GmbH.StoreSettingsTestProjectUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = nicigomez.StoreSettingsTestProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

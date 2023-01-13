@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isOpenString = false
+    @State private var isOpenSettings = false
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("open String") {
+                isOpenString.toggle()
+            }
+            Button("open Settings") {
+                isOpenSettings.toggle()
+            }
         }
         .padding()
+        .sheet(isPresented: $isOpenString) {
+            StringView()
+        }
+        .sheet(isPresented: $isOpenSettings) {
+            SettingsView()
+        }
     }
 }
 
